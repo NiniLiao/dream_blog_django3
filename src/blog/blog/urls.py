@@ -22,7 +22,7 @@ from posts.views import (
     index, blog, post, search, 
     post_create, post_update, post_delete)
 
-
+# from allauth import
 
 urlpatterns = [
     path('admin/', admin.site.urls),
