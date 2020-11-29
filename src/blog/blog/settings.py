@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Google驗證成功後，導向頁面，登入後的首頁網址
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -43,6 +45,9 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    # google provider
+    'allauth.socialaccount.providers.google',
 
     'crispy_forms',
     'tinymce',
