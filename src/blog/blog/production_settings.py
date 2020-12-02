@@ -15,8 +15,8 @@ import os
 from .settings import *
 
 # STATIC_ROOT = 'staticfiles'
-STATIC_ROOT = os.path.join(VENV_PATH, 'static_root')
-MEDIA_ROOT = os.path.join(VENV_PATH, 'media_root')
+STATIC_ROOT = 'media_root'
+
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['https://dreamblogdjango3.herokuapp.com/']
 DEBUG = False
