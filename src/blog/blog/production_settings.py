@@ -14,7 +14,8 @@ from pathlib import Path
 import os
 from .settings import *
 
-STATIC_ROOT = 'staticfiles'
+# STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = '/static/'
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['https://dreamblogdjango3.herokuapp.com/']
