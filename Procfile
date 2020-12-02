@@ -1,1 +1,1 @@
-web: gunicorn DREAM_BLOG_DJANGO3.wsgi
+web: gunicorn /src/blog.wsgi
