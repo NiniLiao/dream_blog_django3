@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath DREAM_BLOG_DJANGO3.wsgi
+web: gunicorn DREAM_BLOG_DJANGO3.wsgi
