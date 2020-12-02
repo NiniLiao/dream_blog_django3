@@ -1,1 +1,1 @@
-web: gunicorn src/blog/blog.wsgi
+web: gunicorn --pythonpath blog blog.wsgi
