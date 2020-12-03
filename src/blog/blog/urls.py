@@ -22,7 +22,8 @@ from posts.views import (
     index, blog, post, search, 
     post_create, post_update, post_delete)
 
-# from allauth import
+from contact.views import get_contact
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -34,7 +35,8 @@ urlpatterns = [
     path('post/<id>/update/', post_update, name='post-update'),
     path('post/<id>/delete/', post_delete, name='post-delete'),
     path('tinymce/', include('tinymce.urls')),
-    path('accounts/', include('allauth.urls'))
+    path('accounts/', include('allauth.urls')),
+    path('contact/', get_contact),
 ]
 
 if settings.DEBUG:
